@@ -1,0 +1,16 @@
+class Estadisticas:
+    @staticmethod
+    def sum(a):
+        total = 0
+        for x in a:
+            total += x
+        return total
+    @staticmethod
+    def average(a):
+        return Estadisticas.sum(a) / len(a)
+def main():
+    grades = [80, 75, 90, 60, 95]
+    print("Suma:", Estadisticas.sum(grades))
+    print("Promedio:", Estadisticas.average(grades))
+if __name__ == "__main__":
+    main()
