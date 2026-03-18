@@ -1,0 +1,16 @@
+public class Resta {
+    //Atributos
+    private Numero numero1;
+    private Numero numero2;
+
+    public Resta(Numero numero1, Numero numero2){
+        this.numero1 = numero1;
+        this.numero2 = numero2;
+    }
+
+    public Numero restar(){
+        int resultado = numero1.getNumero() - numero2.getNumero();
+        return new Numero(resultado);
+    }
+    
+}
