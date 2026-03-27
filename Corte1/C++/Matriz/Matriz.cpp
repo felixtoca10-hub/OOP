@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Matriz2x2 {
+class Matriz {
 public:
     int data[2][2];
 
@@ -31,7 +31,7 @@ public:
 };
 
 int main() {
-    Matriz2x2 m;
+    Matriz m;
     m.cargarEjemplo();
     m.imprimir();
     cout << "Suma = " << m.sumaElementos() << "\n";
