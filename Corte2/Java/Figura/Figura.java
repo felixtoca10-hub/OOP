@@ -5,7 +5,6 @@ abstract class Figura {
     }
     public abstract double calcularArea () ;
     public void mostrarInfo () {
-        System . out . println (" Figura : " + nombre + " | Area : " +
-    calcularArea () ) ;
+        System . out . println (" Figura : " + nombre + " | Area : " + calcularArea () ) ;
     }
 }
