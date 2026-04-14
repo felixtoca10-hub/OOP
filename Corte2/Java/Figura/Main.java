@@ -4,9 +4,8 @@ public class Main {
             new Circulo (5.0) ,
             new Rectangulo (10.0 , 4.0)
         };
-
         for ( Figura f : figuras ) {
-            f . mostrarInfo () ;
+            f . mostrarInfo ();
         }
     }
 }
