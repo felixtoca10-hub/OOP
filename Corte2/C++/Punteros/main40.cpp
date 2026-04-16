@@ -2,11 +2,13 @@
 using namespace std;
 
 int main() {
-    int n = 4;
-    int* v = new int[n];           
+    int* p = new int;           // Reserva espacio para un entero en memoria dinamica.
     
-    for (int i = 0; i < n; i++) {
-        
-    }
+    *p = 55;                    // Escribe 55 en la memoria reservada.
+    cout << *p << endl;         // Lee el valor guardado.
+
+    delete p;                   // Libera la memoria reservada.
+    p = nullptr;                // Buena practica: evitar puntero colgante.
+
     return 0;
 }
