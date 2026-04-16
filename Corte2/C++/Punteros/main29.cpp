@@ -1,13 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int v[4] = {10, 20, 30, 40};        // Arreglo de 4 enteros.
+void intercambiar(int* a, int* b) {
+    int temp = *a; // Guarda el valor al que apunta a.
+    *a = *b; // Copia en a el valor al que apunta b.
+    *b = temp; // Copia el valor temporal en b.
+}
 
-    cout << v[0] << endl;               // Acceso clasico por indice.
-    cout << *v << endl;                 // Acceso al primer elemento por puntero.
-    cout << *(v + 1) << endl;           // Segundo elemento: 20.
-    cout << *(v + 2) << endl;           // Tercer elemento: 30.
-    
+int main() {
+    int x = 3;
+    int y = 9;
+
+    intercambiar(&x, &y); // Se envian las direcciones.
+
+    cout << "x = " << x << ", y = " << y << endl;
     return 0;
 }
