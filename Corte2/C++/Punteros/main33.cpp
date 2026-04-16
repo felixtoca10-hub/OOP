@@ -2,12 +2,12 @@
 using namespace std;
 
 int main() {
-    int v[5] = {4, 8, 12, 16, 20};        // Datos del arreglo.
-    int* p = v;                           // p apunta al primer elemento.
+    int v[4] = {10, 20, 30, 40};        // Arreglo de 4 enteros.
 
-    for (int i = 0; i < 5; i++) {
-        cout << "Elemento " << i << " = " << *(p + i) << endl;
-    }
+    cout << v[0] << endl;               // Acceso clasico por indice.
+    cout << *v << endl;                 // Acceso al primer elemento por puntero.
+    cout << *(v + 1) << endl;           // Segundo elemento: 20.
+    cout << *(v + 2) << endl;           // Tercer elemento: 30.
     
     return 0;
 }
