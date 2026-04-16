@@ -2,13 +2,12 @@
 using namespace std;
 
 int main() {
-    int* p = new int;           // Reserva espacio para un entero en memoria dinamica.
+    int v[5] = {4, 8, 12, 16, 20};        // Datos del arreglo.
+    int* p = v;                           // p apunta al primer elemento.
+
+    for (int i = 0; i < 5; i++) {
+        cout << "Elemento " << i << " = " << *(p + i) << endl;
+    }
     
-    *p = 55;                    // Escribe 55 en la memoria reservada.
-    cout << *p << endl;         // Lee el valor guardado.
-
-    delete p;                   // Libera la memoria reservada.
-    p = nullptr;                // Buena practica: evitar puntero colgante.
-
     return 0;
 }
